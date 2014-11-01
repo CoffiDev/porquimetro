@@ -1,17 +1,35 @@
 package com.example.alejandro.porquimetro;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 
 public class Index extends ActionBarActivity {
+
+    public Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_index);
+
+        button = (Button)findViewById(R.id.iniciar);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Toast.makeText(Index.this, "Hemos registrado al puerco", Toast.LENGTH_LONG).show();
+                Intent intentopuerco = new Intent(Index.this, MyFirstActivity.class);
+                startActivity(intentopuerco);
+            }
+        });
     }
 
 
