@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:padding="0px"
+
+    tools:context=".Reportar"
+    android:id="@+id/reportars">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:background="@color/white"
+        android:id="@+id/Title"
+        android:text="PORKIMETRO"
+        android:gravity="center"
+        android:layout_margin="0px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mandar reporte del puerco "
+        android:textSize="40px"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/Title"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/porkimetro" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/placa"
+        android:hint="Placa"
+        android:layout_below="@+id/porkimetro"
+        android:layout_alignRight="@+id/porki"
+        android:layout_alignEnd="@+id/porki" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/porki"
+        android:hint="Porki"
+        android:layout_below="@+id/placa"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mordida"
+        android:hint="Mordida"
+        android:layout_below="@+id/porki"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/articulo"
+        android:hint="Articulo "
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/mordida"
+        android:layout_alignStart="@+id/mordida" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ley"
+        android:hint="Ley"
+        android:layout_below="@+id/articulo"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:text="Reportar"
+        android:onClick="reportar"
+        android:id="@+id/reportar"
+        android:background="#fff"
+        android:layout_below="@+id/ley"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp" />
+
+
+</RelativeLayout>

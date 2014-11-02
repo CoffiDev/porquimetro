@@ -35,6 +35,7 @@ public class MyFirstActivity extends ActionBarActivity {
 
                 Toast.makeText(MyFirstActivity.this, "Hemos registrado al puerco", Toast.LENGTH_LONG).show();
                 Intent intentopuerco = new Intent(MyFirstActivity.this,MyReportado.class);
+                startActivity(intentopuerco);
             }
         });
 

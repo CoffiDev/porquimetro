@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:padding="0px"
+
+    tools:context=".BuscarP">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:background="@color/white"
+        android:id="@+id/Title"
+        android:text="PORKIMETRO"
+        android:gravity="center"
+        android:layout_margin="0px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true" />
+    <!--
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/placa"
+        android:text="Ingresa la placa de tu porki"
+        android:layout_below="@+id/Title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:layout_below="@id/placa"
+        android:background="@color/white"
+        android:onClick="buscarPorki"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar"
+        android:layout_centerHorizontal="true" />
+    -->
+
+    <fragment
+        android:layout_marginTop="20dp"
+        android:name="com.example.alejandro.porquimetro.fragments.mostrarPorki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragM"
+        android:layout_below="@+id/fragB"
+    />
+
+    <fragment
+        android:name="com.example.alejandro.porquimetro.fragments.buscarPorki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragB"
+        android:layout_below="@+id/Title"
+    />
+
+    <Button
+        android:layout_below="@+id/fragM"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true"
+        android:text="Inicio"
+        android:onClick="inicio"
+    />
+
+
+</RelativeLayout>

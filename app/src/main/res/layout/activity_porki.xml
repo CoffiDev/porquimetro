@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:padding="0px"
+
+    tools:context=".Index">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:background="@color/white"
+        android:id="@+id/Title"
+        android:text="PORKIMETRO"
+        android:gravity="center"
+        android:layout_margin="0px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true" />
+
+
+
+</RelativeLayout>

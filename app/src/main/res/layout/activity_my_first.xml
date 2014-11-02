@@ -14,7 +14,8 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Bienvenidos a Porkimetro"
-        android:id="@+id/textView"
+
+        android:id="@+id/porkimetro"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
@@ -23,7 +24,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/textDigitaPlaca"
         android:hint="Digita la placa."
-        android:layout_below="@+id/textView"
+        android:layout_below="@+id/porkimetro"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="47dp"
 

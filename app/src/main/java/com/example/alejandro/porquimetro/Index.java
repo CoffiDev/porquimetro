@@ -10,45 +10,53 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import org.w3c.dom.Text;
+
 
 public class Index extends ActionBarActivity {
-
-    public Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_index);
+    }
 
-        button = (Button)findViewById(R.id.iniciar);
-        button.setOnClickListener(new View.OnClickListener() {
+    public void alerta(View v)
+    {
+        Toast.makeText(this,"Estas reportando",Toast.LENGTH_SHORT).show();
+    }
+
+    public void goBuscarP(View v)
+    {
+        Intent intent = new Intent(this,BuscarP.class);
+        startActivity(intent);
+    }
+
+    public void goBuscarL(View v)
+    {
+        Intent intent = new Intent(this,Articulo.class);
+        startActivity(intent);
+    }
+
+    public void goReportar(View v)
+    {
+        Intent intent = new Intent(this,Reportar.class);
+        startActivity(intent);
+    }
+}
+
+
+
+
+/*
+        reporta = (Button)findViewById(R.id.Reporta);
+        reporta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Toast.makeText(Index.this, "Hemos registrado al puerco", Toast.LENGTH_LONG).show();
-                Intent intentopuerco = new Intent(Index.this, MyFirstActivity.class);
+                //Toast.makeText(Index.this, "Hemos registrado al puerco", Toast.LENGTH_LONG).show();
+                Intent intentopuerco = new Intent(Index.this, Reportar.class);
                 startActivity(intentopuerco);
             }
         });
-    }
-
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.index, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
-}
+        */

@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.alejandro.porquimetro.mostrarP">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:background="@color/white"
+        android:id="@+id/Title"
+        android:text="PORKIMETRO"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/porkimetro"
+        android:layout_alignRight="@+id/buscarA"
+        android:layout_alignEnd="@+id/buscarA" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Placa :"
+        android:id="@+id/placa"
+        android:layout_toEndOf="@+id/porkimetro"
+        android:layout_alignTop="@+id/porkimetro"
+        android:layout_alignLeft="@+id/reportar"
+        android:layout_alignStart="@+id/reportar"
+        android:layout_marginTop="49dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Porkimetro"
+        android:id="@+id/porkimetro"
+        android:layout_gravity="left|center_vertical"
+        android:layout_toStartOf="@+id/buscarA"
+        android:layout_above="@+id/buscar"
+        android:layout_toLeftOf="@+id/buscarA" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reportar"
+        android:id="@+id/reportar"
+        android:layout_gravity="right|top"
+        android:layout_toEndOf="@+id/placa"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/Title"
+        android:layout_alignEnd="@+id/Title" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar articulo"
+        android:id="@+id/buscarA" />
+
+</RelativeLayout>

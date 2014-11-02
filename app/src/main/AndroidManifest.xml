@@ -24,6 +24,38 @@
             android:name=".MyReportado"
             android:label="@string/title_activity_my_reportado" >
         </activity>
+        <activity
+            android:name=".Reportar"
+            android:label="@string/title_activity_reportar" >
+        </activity>
+        <activity
+            android:name=".Agradecimiento"
+            android:label="@string/title_activity_agradecimiento" >
+        </activity>
+        <activity
+            android:name=".BuscarP"
+            android:label="@string/title_activity_buscar_p" >
+        </activity>
+        <activity
+            android:name=".porki"
+            android:label="@string/title_activity_porki" >
+        </activity>
+        <activity
+            android:name=".mostrarP"
+            android:label="@string/title_activity_mostrar_p" >
+        </activity>
+        <activity
+            android:name=".buscarA"
+            android:label="@string/title_activity_buscar" >
+        </activity>
+        <activity
+            android:name=".Articulo"
+            android:label="@string/title_activity_articulo" >
+        </activity>
+        <activity
+            android:name=".ArticuloMostrar"
+            android:label="@string/title_activity_articulo_mostrar" >
+        </activity>
     </application>
 
 </manifest>
