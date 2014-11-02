@@ -1,49 +1,70 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/blue"
-    android:padding="0px"
+    android:layout_height="match_parent">
 
-    tools:context=".Articulo">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="60px"
-        android:background="@color/white"
-        android:id="@+id/Title"
-        android:text="PORKIMETRO"
-        android:gravity="center"
-        android:layout_margin="0px"
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/baninf"
+        android:id="@+id/imageView" />
 
-    <EditText
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Ley"
+            android:id="@+id/ley"
+            android:layout_marginTop="33dp"
+            android:layout_below="@+id/articulo"
+            android:layout_centerHorizontal="true" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Articulo"
+            android:id="@+id/articulo"
+            android:layout_below="@+id/Title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="69dp" />
+        <Button
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar"
+            android:id="@+id/buscar"
+            android:onClick="mostrarArticulo"
+            android:background="@color/white"
+            android:layout_below="@id/ley"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Ley"
-        android:id="@+id/ley"
-        android:layout_marginTop="33dp"
-        android:layout_below="@+id/articulo"
-        android:layout_centerHorizontal="true" />
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Articulo"
-        android:id="@+id/articulo"
-        android:layout_below="@+id/Title"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="69dp" />
-    <Button
-        android:layout_marginTop="50dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Buscar"
-        android:id="@+id/buscar"
-        android:onClick="mostrarArticulo"
-        android:background="@color/white"
-        android:layout_below="@id/ley"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/bans" />
+
+
+
 
 </RelativeLayout>

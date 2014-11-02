@@ -1,67 +1,83 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/blue"
-    android:padding="0px"
+    android:layout_height="match_parent">
 
-    tools:context=".ArticuloMostrar">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="60px"
-        android:background="@color/white"
-        android:id="@+id/Title"
-        android:text="PORKIMETRO"
-        android:gravity="center"
-        android:layout_margin="0px"
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true" />
-    <TextView
-        android:layout_marginTop="57dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="No. articulo:"
-        android:id="@+id/no"
-        android:layout_below="@+id/multa"
-        android:layout_centerHorizontal="true" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Texto: "
-        android:id="@+id/texto"
-        android:layout_below="@+id/Title"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="35dp" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tipo de Falta:"
-        android:id="@+id/falta"
-        android:layout_marginTop="115dp"
-        android:layout_below="@+id/Title"
-        android:layout_alignLeft="@+id/no"
-        android:layout_alignStart="@+id/no" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Multa:"
-        android:id="@+id/multa"
-        android:layout_below="@+id/falta"
-        android:layout_alignRight="@+id/texto"
-        android:layout_alignEnd="@+id/texto"
-        android:layout_marginTop="83dp" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/baninf"
+        android:id="@+id/imageView" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:background="@color/white"
-        android:layout_height="wrap_content"
-        android:text="Inicio"
-        android:onClick="inicio"
-        android:layout_marginTop="40dp"
-        android:id="@+id/button"
-        android:layout_below="@+id/no"
-        android:layout_centerHorizontal="true" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
+        <TextView
+            android:layout_marginTop="39dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No. articulo:"
+            android:id="@+id/no"
+            android:layout_below="@+id/multa"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Texto: "
+            android:id="@+id/texto"
+            android:layout_marginTop="18dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipo de Falta:"
+            android:id="@+id/falta"
+            android:layout_marginTop="42dp"
+            android:layout_below="@+id/texto"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Multa:"
+            android:id="@+id/multa"
+            android:layout_marginTop="59dp"
+            android:layout_below="@+id/falta"
+            android:layout_alignLeft="@+id/texto"
+            android:layout_alignStart="@+id/texto" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:text="Inicio"
+            android:onClick="inicio"
+            android:layout_marginTop="20dp"
+            android:id="@+id/button"
+            android:layout_below="@+id/no"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/bans" />
 </RelativeLayout>
+

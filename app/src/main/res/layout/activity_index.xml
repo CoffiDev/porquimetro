@@ -1,61 +1,74 @@
-
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
 
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/blue"
-    android:padding="0px"
+    android:layout_height="match_parent">
 
-    tools:context=".Index">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="60px"
-        android:background="@color/white"
-        android:id="@+id/Title"
-        android:text="PORKIMETRO"
-        android:gravity="center"
-        android:layout_margin="0px"
-    />
-
-
-    <Button
-        android:layout_marginTop="80dp"
-        android:layout_width="300px"
+    <ImageView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Reporta Puerco"
-        android:id="@+id/reporta"
-        android:background="@color/white"
-        android:onClick="goReportar"
-        android:layout_below="@+id/Title"
-        android:layout_centerHorizontal="true"
-    />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/baninf"
+        android:id="@+id/imageView" />
 
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            android:text="Reportar Porky"
+            android:id="@+id/reporta"
+            android:background="@color/white"
+            android:onClick="goReportar"
+            android:layout_below="@+id/Title"
+            android:layout_centerHorizontal="true"
+            />
 
-    <Button
-        android:layout_marginTop="20dp"
-        android:layout_width="300px"
+        <Button
+            android:layout_marginTop="40dp"
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            android:text="Buscar Porky"
+            android:id="@+id/BuscaP"
+            android:background="@color/white"
+            android:onClick="goBuscarP"
+            android:layout_below="@+id/reporta"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:layout_marginTop="60dp"
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            android:text="Buscar Ley "
+            android:id="@+id/BuscaL"
+            android:background="@color/white"
+            android:onClick="goBuscarL"
+            android:layout_below="@+id/BuscaP"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Busca Puerco"
-        android:id="@+id/BuscaP"
-        android:background="@color/white"
-        android:onClick="goBuscarP"
-        android:layout_below="@+id/reporta"
-        android:layout_centerHorizontal="true"/>
-
-    <Button
-        android:layout_marginTop="20dp"
-        android:layout_width="300px"
-        android:layout_height="wrap_content"
-        android:text="Busca Ley "
-        android:id="@+id/BuscaL"
-        android:background="@color/white"
-        android:onClick="goBuscarL"
-        android:layout_below="@+id/BuscaP"
-        android:layout_centerHorizontal="true"
-    />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/bans" />
 
 </RelativeLayout>
+

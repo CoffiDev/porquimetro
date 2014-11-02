@@ -1,71 +1,58 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/blue"
-    android:padding="0px"
+    android:layout_height="match_parent">
 
-    tools:context=".BuscarP">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="60px"
-        android:background="@color/white"
-        android:id="@+id/Title"
-        android:text="PORKIMETRO"
-        android:gravity="center"
-        android:layout_margin="0px"
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true" />
-    <!--
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/baninf"
+        android:id="@+id/imageView" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
     <EditText
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/placa"
-        android:text="Ingresa la placa de tu porki"
-        android:layout_below="@+id/Title"
+        android:id="@+id/placabuscar"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp" />
+        android:hint="Ingresa la placa de tu porki"/>
 
-    <Button
-        android:layout_below="@id/placa"
-        android:background="@color/white"
-        android:onClick="buscarPorki"
-        android:layout_marginTop="30dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Buscar"
-        android:layout_centerHorizontal="true" />
-    -->
-
-    <fragment
-        android:layout_marginTop="20dp"
-        android:name="com.example.alejandro.porquimetro.fragments.mostrarPorki"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/fragM"
-        android:layout_below="@+id/fragB"
-    />
-
-    <fragment
-        android:name="com.example.alejandro.porquimetro.fragments.buscarPorki"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/fragB"
-        android:layout_below="@+id/Title"
-    />
-
-    <Button
-        android:layout_below="@+id/fragM"
-        android:layout_marginTop="30dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:layout_centerHorizontal="true"
-        android:text="Inicio"
-        android:onClick="inicio"
-    />
-
-
+        <Button
+            android:layout_below="@+id/placabuscar"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="400dp"
+            android:onClick="buscar"
+            android:layout_height="wrap_content"
+            android:text="Buscar"
+            android:id="@+id/buscar"
+            android:layout_centerHorizontal="true"
+        />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/bans" />
+        </RelativeLayout>
 </RelativeLayout>
