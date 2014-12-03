@@ -34,10 +34,10 @@ public class Reportar extends ActionBarActivity {
     {
         TextView placa = (TextView) findViewById(R.id.placa);
         TextView porki = (TextView) findViewById(R.id.porki);
-        TextView mordida = (TextView) findViewById(R.id.mordida);
+        //TextView mordida = (TextView) findViewById(R.id.mordida);
 
-        String urlget= url+ "placa=" + placa.getText() + "&por=" + porki.getText() + "&precio=" + mordida.getText();
-        Toast.makeText(getApplicationContext(), urlget, Toast.LENGTH_SHORT).show();
+        String urlget= url+ "placa=" + placa.getText() + "&por=" + porki.getText() + "&precio=" + "3434";
+        //Toast.makeText(getApplicationContext(), urlget, Toast.LENGTH_SHORT).show();
         RequestQueue queue = Volley.newRequestQueue(this);
 
         JsonObjectRequest jsObjRequest = new JsonObjectRequest
@@ -60,7 +60,7 @@ public class Reportar extends ActionBarActivity {
                     public void onErrorResponse(VolleyError error) {
 
                         // TODO Auto-generated method stub
-                        Toast.makeText(getApplicationContext(), "Registrado", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(getApplicationContext(), "Registrado", Toast.LENGTH_SHORT).show();
                     }
                 });
         queue.add(jsObjRequest);

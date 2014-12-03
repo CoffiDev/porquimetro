@@ -26,10 +26,7 @@ public class ArticuloMostrar extends Activity {
 
 
 
-    private TextView    num,
-                        texto,
-                        falta,
-                        multa;
+    private TextView num, texto,falta,multa;
 
 
 
@@ -41,6 +38,7 @@ public class ArticuloMostrar extends Activity {
         String ley = getIntent().getStringExtra("ley");
         String art = getIntent().getStringExtra("art");
 
+
         String url = "http://porkimetro.wc.lt/cons.php?ley="+ley+"&art="+art;
 
         setContentView(R.layout.activity_articulo_mostrar);
@@ -49,6 +47,7 @@ public class ArticuloMostrar extends Activity {
         texto = (TextView) findViewById(R.id.texto);
         falta = (TextView) findViewById(R.id.falta);
         multa = (TextView) findViewById(R.id.multa);
+
 
         RequestQueue queue = Volley.newRequestQueue(this);
 
@@ -62,6 +61,8 @@ public class ArticuloMostrar extends Activity {
                             num.setText("Numero: " + response.getString("numero"));
 
                             texto.setText("Texto:\n " + response.getString("texto"));
+
+
                             falta.setText("Falta cometida: " + response.getString("tipo"));
                             multa.setText("Multa:$ " + response.getString("multa"));
 

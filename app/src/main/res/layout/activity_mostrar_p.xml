@@ -31,25 +31,70 @@
         android:textSize="25dp"
         android:id="@+id/porkimetro" />
 
+    <TextView
+        android:layout_below="@+id/porkimetro"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:textSize="25dp"
+        android:id="@+id/nombre" />
+
+    <TextView
+        android:layout_below="@+id/nombre"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No. de Reportes:"
+        android:textSize="25dp"
+        android:id="@+id/reportes" />
+
+    <TextView
+        android:layout_below="@+id/reportes"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cuadrante "
+        android:textSize="25dp"
+        android:id="@+id/cuadrante" />
+
+
+    <TextView
+        android:layout_below="@+id/cuadrante"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dentro "
+        android:textSize="25dp"
+        android:textColor="@color/blue"
+        android:id="@+id/dentro" />
+
     <Button
         android:layout_marginTop="30dp"
         android:layout_marginLeft="10dp"
-        android:layout_below="@id/porkimetro"
+        android:layout_below="@id/dentro"
         android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:text="Reportar"
         android:background="@color/white"
         android:id="@+id/reportarP"
+        android:onClick="goReportar"
         />
 
     <Button
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="10dp"
-        android:layout_below="@id/reportarP"
+        android:layout_marginLeft="210dp"
+        android:layout_below="@id/dentro"
         android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:background="@color/white"
         android:text="Buscar articulo"
-        android:id="@+id/buscarA" />
+        android:id="@+id/buscarA"
+        android:onClick="goArticulo"
+    />
 
 </RelativeLayout>

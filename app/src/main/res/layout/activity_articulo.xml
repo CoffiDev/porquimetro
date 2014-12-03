@@ -24,7 +24,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
 
-
+        <!--
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -33,6 +33,7 @@
             android:layout_marginTop="33dp"
             android:layout_below="@+id/articulo"
             android:layout_centerHorizontal="true" />
+        -->
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -41,15 +42,25 @@
             android:layout_below="@+id/Title"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="69dp" />
+
+
+        <Spinner
+            android:layout_below="@+id/articulo"
+            android:id="@+id/reglamentos"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+        />
+
         <Button
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="60dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Buscar"
             android:id="@+id/buscar"
             android:onClick="mostrarArticulo"
             android:background="@color/white"
-            android:layout_below="@id/ley"
+            android:layout_below="@id/reglamentos"
             android:layout_centerHorizontal="true" />
 
     </RelativeLayout>
